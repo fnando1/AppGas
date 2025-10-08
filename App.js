@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from "react";
+import {View, Text, Image} from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>AppGas</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+class App extends Component{
+  render(){
+
+    let nome = 'Faça seu Pedido.';
+    let img = 'https://www.utilgas.com.br/img/1692110854.1204-foto_banner-N.webp'
+
+    return(
+      <View>
+        <Text style={{color: '#074F8C', fontSize: 25, margin: 20}} >
+          AppGas
+        </Text>
+        <Text>Entrega Rapida</Text>
+        <text>Entregamos na região norte de Manaus.</text>
+
+        <Image 
+          source={{uri:img}}
+          style={{width:300, height: 300}}
+        />
+
+        <Text style={{fontSize:30}} >{nome}</Text>
+
+      </View>
+    );
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
