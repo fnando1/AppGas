@@ -15,14 +15,16 @@ const API_URL = 'http://localhost:3000/orders'; // ajuste conforme ambiente
 const CLIENT_CREDENTIALS = { user: 'cliente@gasonline.com', pass: '123456' };
 const gasOptions = [
   { id: 'p13', name: 'Gás de Cozinha (P13)', price: 105.00, weight: '13kg' },
+  { id: 'p7',  name: 'Gás Econômico (P7)',   price: 80.00,  weight: '7kg'  },
+  { id: 'p5',  name: 'Gás Compacto (P5)',    price: 60.00,  weight: '5kg'  },
   { id: 'p45', name: 'Gás Industrial (P45)', price: 380.00, weight: '45kg' },
 ];
 const GAS_SIZES = ['13kg', '7kg', '5kg', '45kg'];
 
 // --- STYLES ---
 const styles = StyleSheet.create({
-  loadingContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5F5F5' },
-  container: { flex: 1, backgroundColor: '#F5F5F5', paddingTop: 40 },
+  loadingContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFA500' },
+  container: { flex: 1, backgroundColor: '#FFA500', paddingTop: 40 },
   header: { fontSize: 24, fontWeight: '700', color: '#D90000', textAlign: 'center', marginBottom: 20, paddingHorizontal: 20 },
   card: { backgroundColor: '#FFFFFF', borderRadius: 12, marginHorizontal: 20, marginBottom: 15, padding: 15, elevation: 3 },
   title: { fontSize: 18, fontWeight: '600', color: '#333', marginBottom: 5 },
